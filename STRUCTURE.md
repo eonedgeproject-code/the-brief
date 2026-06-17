@@ -106,3 +106,19 @@ The history of a prompt is part of the record (see README). Two mechanisms prese
 - **The `## Changes from previous capture` section** — the human-readable diff lives *inside* the newer entry, so the change is visible even outside version control.
 
 If this repository is under git, commit history is a third layer — but the diff section must still exist in-file, because the record should be readable without git.
+
+---
+
+## Validation
+
+The schema above is enforced by a small checker. Before opening a PR, run:
+
+```
+node tools/validate-entries.mjs
+```
+
+It validates every entry's frontmatter against this document (required fields, the `surface` /
+`method` / `confidence` enums, the source rules for leaked and official captures) and checks that
+the required body sections are present. It exits non-zero on any error. It does **not** judge
+content or provenance — that's the human review described in [CONTRIBUTING.md](CONTRIBUTING.md). See
+[tools/README.md](tools/README.md) for the full list of checks.

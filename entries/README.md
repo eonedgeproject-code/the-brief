@@ -45,3 +45,29 @@ Format, schema, and conventions: [../STRUCTURE.md](../STRUCTURE.md). Start a new
 their vendors are the Anthropic captures and xAI Grok; OpenAI and Google publish specifications
 and policies rather than their live prompts (⚠️), and the one ChatGPT system prompt here is a
 community leak we cannot independently verify (low confidence). The contrast is the point.*
+
+## Known gaps
+
+The record is openly incomplete, and naming the holes is more useful than hiding them. These are
+the gaps we'd most like contributors to close — but only on the archive's terms, which is to say
+with real provenance. We would rather leave a gap than fill it with something unverifiable.
+
+- **Method imbalance.** Every entry here is `official-disclosure` except one `community-leaked`.
+  There are **no** `self-extracted` and **no** `behavioral-inference` captures yet, even though
+  [../methodology/](../methodology/) documents both methods in full. A taxonomy of four tags that
+  only exercises one is the most visible weakness in the archive. A single honest
+  `behavioral-inference` entry — low confidence, heavily caveated, with its probes and recorded
+  outputs documented per [../methodology/behavioral-inference.md](../methodology/behavioral-inference.md)
+  — would do more for the project than another high-confidence official disclosure. Note that such
+  an entry requires *actual* probing with recorded results; a plausible-sounding reconstruction
+  without real captured outputs is exactly what [../CONTRIBUTING.md](../CONTRIBUTING.md) rejects.
+- **Vendor coverage.** Large vendors are entirely absent: Meta (Llama / Meta AI), Mistral,
+  DeepSeek, Microsoft Copilot, Perplexity, Apple Intelligence, Amazon, and others. We'd welcome
+  captures for any of them — but only with a documented acquisition story. No provenance, no entry.
+- **No exercised version chains.** Every capture so far is a first capture (`supersedes: null`).
+  The archive is built to track how a prompt changes over time, and that machinery hasn't been used
+  yet because no model here has a second dated capture. The first real `supersedes` chain — a vendor
+  re-disclosing a changed prompt — will be a good test of the format.
+
+If you can close one of these *with provenance*, read [../CONTRIBUTING.md](../CONTRIBUTING.md) and
+open a PR.

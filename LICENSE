@@ -1,0 +1,63 @@
+The Brief — licensing
+======================
+
+This repository mixes three kinds of material, and they are not under one license. Read
+this before reusing anything.
+
+1. The project's own writing — CC BY 4.0
+----------------------------------------
+
+All original text authored *by this project* is licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0).
+
+  SPDX-License-Identifier: CC-BY-4.0
+  Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+  Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+
+This covers: README.md, CONTRIBUTING.md, STRUCTURE.md, the files under methodology/ and
+analysis/, the indices and templates, and the commentary sections of each entry
+(Provenance, Confidence, Changes, Notes) — in short, everything in this archive that the
+contributors wrote.
+
+You are free to share and adapt this material for any purpose, including commercially,
+provided you give appropriate credit to "The Brief" and link back to this repository.
+
+2. The tools — MIT
+------------------
+
+Code under tools/ is licensed under the MIT License:
+
+  Copyright (c) 2026 The Brief contributors
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this
+  software and associated documentation files (the "Software"), to deal in the Software
+  without restriction, including without limitation the rights to use, copy, modify, merge,
+  publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons
+  to whom the Software is furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all copies or
+  substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+  INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+  PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+  FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+  DEALINGS IN THE SOFTWARE.
+
+3. The captured prompt texts — NOT ours to license
+--------------------------------------------------
+
+The verbatim system-prompt, policy, and specification texts quoted inside the `## Prompt`
+blocks of entries are the work of their respective vendors (Anthropic, OpenAI, xAI, Google,
+and others), not of this project. We do not own them and cannot and do not license them.
+
+They are reproduced here for documentation, commentary, research, and criticism — the
+purpose of the archive — with provenance recorded for each. Their copyright and terms remain
+with the originating vendor. If you reuse a quoted prompt, that reuse is governed by the
+vendor's rights and terms (and, where a source repository carries its own license — for
+example xAI's grok-prompts under AGPL-3.0 — by that license), not by this file. The entry's
+`sources` field points you to the origin so you can check.
+
+In short: our words are CC BY 4.0, our code is MIT, and the vendors' words are the vendors'.
+When in doubt about a quoted prompt, go to the source listed in the entry.

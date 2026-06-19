@@ -16,5 +16,10 @@ This is not comprehensive. The first months will be patchy, biased toward models
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** — how to contribute and what each acquisition tag means.
 - **[methodology/](methodology/)** — how the harder methods (`self-extracted`, `behavioral-inference`) are defined and evaluated.
 - **[analysis/](analysis/)** — research notes drawing on the captures.
+- **[tools/](tools/)** — a dependency-free validator (`node tools/validate-entries.mjs`) that checks every entry against the schema.
 
 If you want to contribute, read [CONTRIBUTING.md](CONTRIBUTING.md) before you open a PR. We decline submissions that can't explain how the prompt was obtained.
+
+## License
+
+The project's own writing is CC BY 4.0 and the tools are MIT; the verbatim vendor prompts quoted inside entries are the vendors' own and are reproduced for documentation, not relicensed. See [LICENSE](LICENSE) for the details that matter before you reuse anything.
